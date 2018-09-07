@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +21,12 @@ private Toolbar toolbar;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
-    public boolean onCreateOptionMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
 
     }
-    public boolean onCreateOptionsItemsSelected(MenuItem menuItem){
+    public boolean onOptionsItemSelected (MenuItem menuItem){
         switch (menuItem.getItemId()){
             case R.id.borrar:
                 Toast.makeText(this,"Has pulsado el menu borrar",Toast.LENGTH_SHORT).show();
@@ -37,10 +38,11 @@ private Toolbar toolbar;
                 Toast.makeText(this,"Has pulsado la flechita chao",Toast.LENGTH_SHORT).show();
 break;
 
+
         }
+return true;
 
 
-        return true;
 
     }
 
