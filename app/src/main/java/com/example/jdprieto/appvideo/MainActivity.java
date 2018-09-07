@@ -26,7 +26,7 @@ private Toolbar toolbar;
         return true;
 
     }
-    public boolean onOptionsItemSelected (MenuItem menuItem){
+    public boolean onOptionsItemSelec                   ted (MenuItem menuItem){
         switch (menuItem.getItemId()){
             case R.id.borrar:
                 Toast.makeText(this,"Has pulsado el menu borrar",Toast.LENGTH_SHORT).show();
